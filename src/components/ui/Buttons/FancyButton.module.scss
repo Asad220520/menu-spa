@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* общие стили полос */
+.line {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+}
+
+/* верхняя: раскрывается справа → влево */
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* старт справа */
+  height: 100%;
+  width: 0;
+  /* из 0 в 100% */
+  background: #ef272c;
+  transition: width 0.5s ease;
+}
+
+/* нижняя: слева → вправо */
+.bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* старт слева */
+  height: 100%;
+  width: 0;
+  background: #ef272c;
+  transition: width 0.5s ease;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: 100%;
+  padding: 16px 24px;
+
+  border: 3px solid #ef272c;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  transition: background .3s ease, color .3s ease;
+}
+
+/* Ховер на КОНТЕЙНЕРЕ — анимируем всё разом */
+.wrapper:hover .top::before {
+  width: 100%;
+}
+
+.wrapper:hover .bottom::before {
+  width: 100%;
+}
+
+.wrapper:hover .button {
+  background: #ef272c;
+  color: #0d0d0d;
+}

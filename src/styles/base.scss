@@ -1,0 +1,79 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: $bg;
+  color: $text;
+}
+h1,
+h2,
+h3,
+.title {
+  font-family: "Silk Serif", serif;
+  font-weight: 600;
+}
+
+body,
+p,
+.text {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+}
+
+
+.container {
+  @include container;
+}
+
+.section {
+  padding-block: 4rem;
+}
+
+.card {
+  @include card;
+}
+
+.btn {
+  @include button-base;
+}
+
+.btn--primary {
+  background: $primary;
+  color: #000;
+}
+
+.link {
+  color: $text;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: .5rem .75rem;
+}
+
+.link--active {
+  background: rgba(255, 255, 255, .12);
+  color: $primary;
+}
+
+.muted {
+  color: $muted;
+}
+
+.border-top {
+  border-top: 1px solid $border;
+}
