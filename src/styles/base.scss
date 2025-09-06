@@ -1,6 +1,5 @@
-@use 'variables' as *;
-@use 'mixins' as *;
-
+@use "variables" as *;
+@use "mixins" as *;
 
 :root {
   color-scheme: dark;
@@ -36,7 +35,6 @@ p,
   font-weight: 400;
 }
 
-
 .container {
   @include container;
 }
@@ -62,11 +60,11 @@ p,
   color: $text;
   text-decoration: none;
   border-radius: 12px;
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .link--active {
-  background: rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, 0.12);
   color: $primary;
 }
 

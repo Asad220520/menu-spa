@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 @mixin container {
   max-width: $container-max;
   margin-inline: auto;
@@ -13,24 +13,22 @@
   }
 }
 
-
 @mixin card {
-  background: rgba(255, 255, 255, .06);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid $border;
   border-radius: $radius-xl;
   backdrop-filter: blur(10px);
   box-shadow: $shadow;
 }
 
-
 @mixin button-base {
   display: inline-flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
   border-radius: $radius-xl;
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   font-weight: 600;
-  transition: filter .2s ease;
+  transition: filter 0.2s ease;
 
   &:hover {
     filter: brightness(1.1);
