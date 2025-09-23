@@ -9,23 +9,16 @@ import ErrorBoundary from "../menu/fullMenu/ErrorBoudary";
 
 const HomePage = () => {
   return (
-    <div>
-      <HeaderBottom />
-      <About />
-      <ErrorBoundary>
-        <Menu />
-        {/* <FullMenu /> */}
-      </ErrorBoundary>
-      <Interior />
-      <Contacts />
-    </div>
     <>
       <div className="header-wrapper">
         <HeaderBottom />
       </div>
       <div className="container">
         <About />
-        <Menu />
+        <ErrorBoundary>
+          <Menu />
+          {/* <FullMenu /> */}
+        </ErrorBoundary>
         <Interior />
         <Contacts />
       </div>
