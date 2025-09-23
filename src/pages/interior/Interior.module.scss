@@ -1,0 +1,47 @@
+.Interior {
+  padding: 80px 0;
+  color: #fff;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .scrollContainer {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  }
+
+  .interiorImage {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
