@@ -19,6 +19,17 @@ const HomePage = () => {
       <Interior />
       <Contacts />
     </div>
+    <>
+      <div className="header-wrapper">
+        <HeaderBottom />
+      </div>
+      <div className="container">
+        <About />
+        <Menu />
+        <Interior />
+        <Contacts />
+      </div>
+    </>
   );
 };
 

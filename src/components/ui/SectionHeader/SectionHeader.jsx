@@ -12,7 +12,6 @@ export default function SectionHeader({
       {(leftIcon || both) && (
         <img src={leftIcon || rightIcon} alt="" className={s.icon} />
       )}
-
       <h2 className={s.title}>{title}</h2>
 
       {(rightIcon || both) && (
