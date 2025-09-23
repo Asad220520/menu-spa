@@ -7,13 +7,17 @@ import Contacts from "../contacts/Contacts";
 
 const HomePage = () => {
   return (
-    <div>
-      <HeaderBottom />
-      <About />
-      <Menu />
-      <Interior />
-      <Contacts />
-    </div>
+    <>
+      <div className="header-wrapper">
+        <HeaderBottom />
+      </div>
+      <div className="container">
+        <About />
+        <Menu />
+        <Interior />
+        <Contacts />
+      </div>
+    </>
   );
 };
 
