@@ -1,0 +1,200 @@
+// .Contacts {
+//   padding: 80px 20px;
+//   color: #fff;
+
+//   .content {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
+//     gap: 40px;
+//     flex-wrap: wrap;
+//   }
+
+//   .visit {
+//     flex: 1;
+//     max-width: 600px;
+
+//     .visitItem {
+//       max-width: 550px;
+//       margin-bottom: 40px;
+
+//       h1 {
+//         font-size: 32px;
+//         font-weight: 700;
+//         margin-bottom: 20px;
+//       }
+
+//       p {
+//         margin: 10px 0;
+//         font-size: 16px;
+//         line-height: 1.6;
+
+//         span {
+//           display: block;
+//           font-weight: 600;
+//           color: #ef272c;
+//         }
+//       }
+//     }
+//   }
+
+//   .contactCard {
+//     flex: 0 0 380px;
+//     max-width: 900px;
+//     background: #ef272c;
+//     color: #1f2731;
+//     padding: 20px;
+//     border-radius: 4px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+
+//     .contact {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 10px;
+
+//       p {
+//         font-size: 16px;
+//         display: flex;
+//         align-items: center;
+//         gap: 8px;
+//       }
+
+//       a {
+//         font-size: 16px;
+//         color: #1f2731;
+//       }
+//     }
+
+//     .map {
+//       width: 100%;
+//       height: 300px;
+//       border-radius: 8px;
+//       overflow: hidden;
+//     }
+//   }
+
+// }
+
+.Contacts {
+  padding: 80px 20px;
+  color: #fff;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .visit {
+    flex: 1;
+    max-width: 600px;
+
+    .visitItem {
+      max-width: 550px;
+      margin-bottom: 40px;
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.6;
+
+        span {
+          display: block;
+          font-weight: 600;
+          color: #ef272c;
+        }
+      }
+    }
+  }
+
+  .contactCard {
+    flex: 0 0 380px;
+    max-width: 900px;
+    background: #ef272c;
+    color: #1f2731;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      a {
+        font-size: 16px;
+        color: #1f2731;
+      }
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 414px) {
+    padding: 40px 10px;
+
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .visit {
+      max-width: 100%;
+
+      .visitItem {
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .contactCard {
+      flex: 1 1 100%;
+      max-width: 100%;
+      padding: 15px;
+
+      .contact {
+        p {
+          font-size: 14px;
+        }
+
+        a {
+          font-size: 14px;
+        }
+      }
+
+      .map {
+        height: 250px;
+      }
+    }
+  }
+}
