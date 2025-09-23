@@ -12,7 +12,7 @@ const HeaderBottom = () => {
 
   useEffect(() => {
     axios
-      .get("http://16.171.197.158/en/list/")
+      .get('http://13.60.41.77/ru/list/')
       .then((res) => setData(res.data[0]))
       .catch((err) => console.error("Ошибка API:", err));
   }, []);

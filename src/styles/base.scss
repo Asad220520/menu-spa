@@ -75,3 +75,7 @@ p,
 .border-top {
   border-top: 1px solid $border;
 }
+.header-wrapper {
+  width: 100vw;
+  margin-left: calc((-50vw + 50%));
+}

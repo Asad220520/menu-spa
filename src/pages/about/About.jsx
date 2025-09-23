@@ -12,12 +12,12 @@ const About = () => {
 
   useEffect(() => {
     axios
-      .get("http://16.171.197.158/en/about/")
+      .get('http://13.60.41.77/ru/about/')
       .then((res) => setAboutData(res.data[0]))
       .catch((err) => console.error("Ошибка загрузки About API:", err));
 
     axios
-      .get("http://16.171.197.158/en/seller/")
+      .get('http://13.60.41.77/ru/seller/')
       .then((res) => setSellerData(res.data[0]))
       .catch((err) => console.error("Ошибка загрузки Seller API:", err));
   }, []);

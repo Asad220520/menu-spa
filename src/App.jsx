@@ -8,7 +8,6 @@ import Contacts from "./pages/contacts/Contacts.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/HomePage/HomePage.jsx";
 import FullMenu from "./pages/menu/fullMenu/FullMenu.jsx";
-import HeaderBottom from "./components/headerBottom/HeaderBottom.jsx";
 
 export default function App() {
   return (
@@ -16,7 +15,6 @@ export default function App() {
       style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
     >
       <Navbar />
-      <HeaderBottom />
       <main style={{ flex: 1 }}>
         <div className="container">
           <Routes>
@@ -30,7 +28,7 @@ export default function App() {
           </Routes>
         </div>
       </main>
-
+$
       <Footer />
     </div>
   );
