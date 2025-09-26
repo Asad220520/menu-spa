@@ -1,13 +1,14 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/header/Navbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import Interior from "./pages/interior/Interior"; 
+import Interior from "./pages/interior/Interior";
 import About from "./pages/about/About.jsx";
 import Menu from "./pages/menu/Menu.jsx";
 import Contacts from "./pages/contacts/Contacts.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/HomePage/HomePage.jsx";
 import FullMenu from "./pages/menu/fullMenu/FullMenu.jsx";
+import MenuDetaile from "./pages/menu/MenuDetaile.jsx";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/menu/full" element={<FullMenu />} />
+            <Route path="/menudetail/:id" element={<MenuDetaile />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
