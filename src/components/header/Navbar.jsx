@@ -19,9 +19,7 @@ export default function Navbar() {
       <div className="container">
         <div className="header">
           <div className="header--logo">
-            <Link to="/">
-              Restaurant
-            </Link>
+            <Link to="/">Restaurant</Link>
           </div>
 
           <nav className="header--nav">

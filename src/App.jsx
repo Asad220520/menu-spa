@@ -16,7 +16,6 @@ export default function App() {
       style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
     >
       <Navbar />
-
       <main style={{ flex: 1 }}>
         <div className="container">
           <Routes>
@@ -31,7 +30,7 @@ export default function App() {
           </Routes>
         </div>
       </main>
-
+$
       <Footer />
     </div>
   );
