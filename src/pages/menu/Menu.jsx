@@ -103,8 +103,6 @@ const Menu = () => {
                         <p>No products available</p>
                       )}
                     </ul>
-
-
                   </div>
                 ))
               ) : (
@@ -121,4 +119,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
