@@ -8,6 +8,7 @@ import Contacts from "./pages/contacts/Contacts.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/HomePage/HomePage.jsx";
 import FullMenu from "./pages/menu/fullMenu/FullMenu.jsx";
+import MenuDetaile from "./pages/menu/MenuDetaile.jsx";
 
 export default function App() {
   return (
@@ -23,12 +24,13 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/menu/full" element={<FullMenu />} />
+            <Route path="/menu/detaile/:id" element={<MenuDetaile />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </main>
-$
+      $
       <Footer />
     </div>
   );
